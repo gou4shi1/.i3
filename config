@@ -166,7 +166,7 @@ bar {
   status_command bumblebee-status \
     -m nic disk cpu memory battery date time \
     -p date.format="%a, %b %d" time.format="%H:%M:%S" \
-       nic.exclude="lo,virbr,docker,vboxnet,veth,br,enp0s31f6" \
+       nic.states="^down" \
     -t solarized-powerline
 }
 
