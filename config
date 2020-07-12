@@ -222,9 +222,6 @@ mode "restore" {
 }
 bindsym $mod+v mode "restore"
 
-# fix i3-resurrect bug
-exec --no-startup-id i3-msg 'exec i3-sensible-terminal'
-
 # scratchpad
 for_window [title="Tilix: scratchpad"] floating enable, move to scratchpad
 bindsym $mod+Shift+Return [title="Tilix: scratchpad"] scratchpad show
